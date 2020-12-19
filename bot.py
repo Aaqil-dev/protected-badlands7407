@@ -20,7 +20,8 @@ client.remove_command("help")
 
 @client.event
 async def on_ready():
-    print("Bot is ready")
+  await client.change_presence(status = discord.Status.idle, activity = discord.Game("/help"))
+  print("Bot is ready")
 
 
 @client.group(invoke_without_command = True)
@@ -45,7 +46,7 @@ async def help_moderation(ctx):
 async def help_fun(ctx):
   em = discord.Embed(title = "Fun Commands", description = "Use These Commands To Have Fun!", color = discord.Color.red())
 
-  em.add_field(name = ":joy:Fun", value = "`meme`,`8ball`,`userinfo`,`hello`,`lenny`,`invite`,`snipe`,`suggest`,`say`,`dm`")
+  em.add_field(name = ":joy:Fun", value = "`meme`,`8ball`,`userinfo`,`hello`,`lenny`,`invite`,`snipe`,`suggest`,`say`,`dm`,`ping`")
 
   await ctx.send(embed = em)
 
@@ -128,6 +129,10 @@ async def snipe(message):
         embed.set_author(name= f"{snipe_message_author}")
         await message.channel.send(embed=embed)
         return
+
+@client.command()
+async def ping(ctx) :
+    await ctx.send(f"🏓 Pong with {str(round({ctx.author}.latency, 2))}")
 
 @client.command(aliases=['8ball'])
 async def _8ball(ctx, *, question):
