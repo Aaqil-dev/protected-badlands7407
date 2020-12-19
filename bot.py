@@ -670,6 +670,7 @@ async def un_mute(ctx, member : discord.Member):
 
 
 
+token = os.environ["NzY5NDYwMTc4NjI5ODIwNDM2.X5PVog.AYYu9LDKfBhpRcHG9exaxthoZ-U"]
 
 client.run("NzY5NDYwMTc4NjI5ODIwNDM2.X5PVog.AYYu9LDKfBhpRcHG9exaxthoZ-U")
 
