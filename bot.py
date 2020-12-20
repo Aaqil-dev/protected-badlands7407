@@ -15,7 +15,7 @@ reddit = asyncpraw.Reddit(client_id = "nskrlCP_0ebwfg",
 os.chdir("C:\\Users\\Ali Aaqil Inaz\\Desktop\\The Anonymous Bot")
 
 client = commands.Bot(command_prefix = "/")
-token = os.getenv("NzY5NDYwMTc4NjI5ODIwNDM2.X5PVog.AYYu9LDKfBhpRcHG9exaxthoZ-U")
+token = os.getenv("NzY5NDYwMTc4NjI5ODIwNDM2.X5PVog.5D-pwWF7zAo-M0e5IqVcdn5QS_g")
 client.remove_command("help")
 
 @client.event
@@ -677,5 +677,5 @@ async def un_mute(ctx, member : discord.Member):
 
 
 
-client.run("NzY5NDYwMTc4NjI5ODIwNDM2.X5PVog.AYYu9LDKfBhpRcHG9exaxthoZ-U")
+client.run("NzY5NDYwMTc4NjI5ODIwNDM2.X5PVog.5D-pwWF7zAo-M0e5IqVcdn5QS_g")
 
