@@ -132,7 +132,7 @@ async def snipe(message):
 
 @client.command()
 async def ping(ctx) :
-    await ctx.send(f"🏓 Pong with {str(round({ctx.author}.latency, 2))}")
+    await ctx.send("🏓Pong!")
 
 @client.command(aliases=['8ball'])
 async def _8ball(ctx, *, question):
@@ -237,7 +237,7 @@ async def beg(ctx):
 
   user = ctx.author
 
-  earnings = random.randrange(500)
+  earnings = random.randrange(10000)
 
   users[str(user.id)]["wallet"] += earnings
 
